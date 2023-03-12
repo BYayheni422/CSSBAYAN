@@ -14,12 +14,13 @@ main{
     flex-direction: column;
 }
 
-#TEXT{
+.mem{
     width: 1080px;
     border-bottom: 0.1rem solid #2c2525;
     margin-top: 0.3rem;
     display: flex;
     flex-direction: column;
+    cursor: pointer;
 } 
 img{
     width: 42rem;
@@ -61,27 +62,13 @@ img{
     align-items: center;
   
 }
-.mem1:hover img{
+.mem:hover img{
     display: block;
 }
-.mem2:hover img{
-    display: block;
-}
-.mem3:hover img{
-    display: block;
-}
-.mem4:hover img{
-    display: block;
-}
-.mem5:hover img{
-    display: block;
-}
-.mem6:hover img{
-    display: block;
-}
-.mem7:hover img{
-    display: block;
-}
+.mem:hover .plus {
+    transform: rotate(45deg);
+   animation: 3s;
+  }
 .plus{
     width: 4rem;
 height: 4rem;
@@ -89,4 +76,17 @@ margin-left: 50rem;
 display: block;
 padding-top: 0%;
 }
-
+input[type=checkbox] {
+    display: none;
+  }
+  input:checked + label p {
+    color: rgb(51, 46, 46);
+  }
+  .mem:active p {
+    color: #E06733 !important;
+    transition: 3s;
+  }
+  .plus {
+    transition: 0.5s 0s;
+  }
+  
