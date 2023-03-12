@@ -1,0 +1,93 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 1080px;
+    height: 1920px;
+    display: flex;
+    margin-left: 10rem;
+}
+main{
+    display: flex;
+    flex-direction: column;
+}
+
+.mem{
+    width: 1080px;
+    border-bottom: 0.1rem solid #2c2525;
+    margin-top: 0.3rem;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+} 
+img{
+    width: 42rem;
+    height: 34rem;
+    justify-content:center;
+    padding-top: 1rem;
+    margin-bottom: 0.5rem;
+    display: none;
+    
+    margin-left: auto;
+    margin-right: auto
+}
+
+
+.Zagolovok{
+    font-style: normal;
+    font-size: 4rem;
+    padding-left: 5rem;
+    text-align: left;
+    width: 1080px;
+    background-color: rgb(172, 219, 233);
+    height: 7rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem; 
+}
+.flox{
+    font-style: normal;
+    display: flex;
+    font-size: 2rem;
+    padding-left: 5rem;
+    text-align: left;
+    width: 1080px;
+    background-color: rgb(220, 233, 237);
+    height: 5rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    justify-content:space-between;
+    flex-direction:row;
+    align-items: center;
+  
+}
+.mem:hover img{
+    display: block;
+}
+.mem:hover .plus {
+    transform: rotate(45deg);
+   animation: 3s;
+  }
+.plus{
+    width: 4rem;
+height: 4rem;
+margin-left: 50rem;
+display: block;
+padding-top: 0%;
+
+}
+input[type=checkbox] {
+    display: none;
+  }
+  input:checked + label p {
+    color: rgb(51, 46, 46);
+  }
+  .mem:active p {
+    color: #E06733 !important;
+    transition: 3s;
+  }
+  .plus {
+    transition: 0.5s 0s;
+  }
+  
